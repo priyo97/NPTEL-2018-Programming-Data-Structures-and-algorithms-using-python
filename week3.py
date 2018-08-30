@@ -41,28 +41,3 @@ def valley(l):
 		return False
 
 
-def func(arr):
-
-	count=0
-	count2=0
-	f1=0;
-	for i in range(1,len(arr)):
-
-		if(arr[i]<arr[i-1]):
-
-			count += 1
-			continue
-
-		if(arr[i]>arr[i-1]):
-			count2 += 1
-			continue
-		else:
-			f1=1
-			break
-
-	if(count>1 and count2>1 and f1==0):
-		return True
-	else:
-		return False
-
-
