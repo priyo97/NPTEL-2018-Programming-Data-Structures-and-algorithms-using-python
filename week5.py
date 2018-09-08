@@ -51,7 +51,7 @@ def main():
 
 		n = len(p) or 1
 
-		marks = str(round(sum(p)/n),2) if p else "0"
+		marks = str(round(sum(p)/n,2)) if p else "0"
 
 		d = [idx,students[idx],marks]
 
